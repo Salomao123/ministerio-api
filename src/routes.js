@@ -10,6 +10,8 @@ routes.post('/login', controllers.LoginSession.store)
 
 routes.use(authMiddleware)
 
+routes.get('/usuarios/:id', controllers.UsuarioController.index)
+
 /*
 Operacoes
 */

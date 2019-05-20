@@ -1,6 +1,7 @@
 const express = require('express')
 const mongoose = require('mongoose')
 const databaseConfig = require('./config/database')
+const cors = require('cors')
 
 class App {
   constructor () {
@@ -20,6 +21,7 @@ class App {
   }
 
   middleware () {
+    this.express.use(cors())
     this.express.use(express.json())
     this.express.use(express.urlencoded({ extended: true }))
   }
