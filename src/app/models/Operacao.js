@@ -15,6 +15,10 @@ const Operacao = new mongoose.Schema(
       type: mongoose.Schema.Types.ObjectId,
       ref: 'Usuario',
       required: true
+    },
+    address: {
+      type: String,
+      required: true
     }
   },
   {
