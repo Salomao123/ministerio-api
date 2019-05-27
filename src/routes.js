@@ -21,4 +21,10 @@ routes.post('/operacoes', controllers.OperacaoController.store)
 // routes.put('/operacoes/:id', controllers.OperacaoController.update)
 // routes.delete('/operacoes/:id', controllers.OperacaoController.destroy)
 
+/**
+ * Post
+ */
+routes.get('/posts', controllers.PostController.index)
+routes.post('/posts', controllers.PostController.store)
+
 module.exports = routes
