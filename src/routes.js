@@ -27,4 +27,9 @@ routes.post('/operacoes', controllers.OperacaoController.store)
 routes.get('/posts', controllers.PostController.index)
 routes.post('/posts', controllers.PostController.store)
 
+/**
+ * Mandado
+ */
+routes.post('/mandados', controllers.MandadoController.store)
+
 module.exports = routes
