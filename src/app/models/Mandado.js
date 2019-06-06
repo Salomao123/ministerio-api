@@ -14,7 +14,7 @@ const Mandado = new mongoose.Schema(
       type: String,
       required: true
     },
-    cnpj: {
+    cnpjCPF: {
       type: String,
       required: true
     }
